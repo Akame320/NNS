@@ -1,0 +1,73 @@
+.btn {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+
+  vertical-align: top;
+
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+  outline: none;
+  border: none;
+  border-radius: .4rem;
+
+  background-color: transparent;
+
+  max-width:100%;
+  height: auto;
+
+  position: relative;
+
+  text-transform: uppercase;
+  text-align: center;
+
+  font-size: 1.3rem;
+  font-weight: 700;
+
+  line-height: 1.8rem;
+
+  letter-spacing: .025em;
+
+  padding: .5rem 1.5rem;
+
+  transition: all $anim ease;
+
+  &.btn-lg {
+    font-size: 1.5rem;
+    line-height: 2.2rem;
+    min-height: 4.8rem;
+    font-weight: 600;
+  }
+
+  &.btn-wide {
+    width: 100%;
+  }
+}
+
+.btn-default {
+  background: $color-main;
+  color: $white;
+
+  transition: all 0.05s linear;
+
+  &:hover{
+    background-color: #46A92D;
+  }
+
+}
+
+.btn-simple {
+  background: $white;
+  color: $text-color;
+  &:before {
+    border-color: $text-color;
+  }
+  .desktop &:hover {
+    color: $color-main;
+
+    &:before {
+      border-color: $color-main;
+    }
+  }
+}

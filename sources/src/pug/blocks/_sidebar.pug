@@ -1,0 +1,33 @@
+.sidebar
+    .sidebar__inner
+        form.sidebar__filters
+            h2.sidebar__title Фильтры поиска
+            .sidebar__filters-row
+                .sidebar__filters-search
+                    input(type='text' placeholder='Название услуги').input-search
+            .sidebar__filters-row
+                .sidebar__filters-label Дальность: &nbsp;
+                    span.range-output &nbsp;
+                    span (км)
+                .sidebar__filters-input
+                    input(type='range' min="0" max="150").rangeSlider-range
+            .sidebar__filters-row
+                .sidebar__filters-label Рейтинг: &nbsp;
+                    span +
+                    span.rate-output
+                .sidebar__filters-input
+                    input(type='range' min="0" max="5").rangeSlider-rate
+            .sidebar__filters-row
+                .sidebar__filters-label Стаж &nbsp;
+                    span +
+                    span.exp-output
+                .sidebar__filters-input
+                    input(type='range' min="0" max="20").rangeslider-exp
+            .sidebar__filters-row
+                .sidebar__filters-label Положительных отзывов: <span class='small'>(от)</span> &nbsp;
+                    span.incReviews-output
+                .sidebar__filters-input
+                    input(type='range' min="0" max="39").rangeSlider-incReviews
+            .sidebar__filters-row
+                .sidebar__filters-btn
+                    input(type='submit' value='Найти услугу').btn.btn-default.btn-submit

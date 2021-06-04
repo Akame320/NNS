@@ -1,0 +1,107 @@
+extends base/_layout
+block head
+    title Main
+block page
+    .page-container
+        .sidebar__wrapper
+            include blocks/_sidebar
+        .content__wrapper
+            .subheader
+                .subheader__inner
+                    .subheader__adress
+                        +setSvg({name: 'mark'})
+                        span.subheader__adress-static Ваш адрес: &nbsp;
+                        span.subheader__adress-dynamic.subheader_out г.Уфа ул. бресткая 10а
+                    .menu-button
+                        a.menu-toggle
+                            span.line.top
+                            span.line.mid
+                            span.line.bot
+                    .menu-block
+                        nav.menu-block__nav
+                            ul.menu-block__nav-list
+                                li.menu-block__nav-item
+                                    a.menu-block__nav-link Нужна ли тут навигация?
+                                li.menu-block__nav-item
+                                    a.menu-block__nav-link Нужна ли тут навигация?
+                                li.menu-block__nav-item
+                                    a.menu-block__nav-link Нужна ли тут навигация?
+            .categories-section
+                .categories-section__inner
+                    h2.categories-section__title Категории:
+                    .categories-section__content
+                        .categories-list__wrapper
+                            ul.categories-list
+                                +categorisItem({text: 'IT и разработка'})
+                                +categorisItem({text: 'IT и разработка'})
+                                +categorisItem({text: 'IT и разработка'})
+                                +categorisItem({text: 'IT и разработка'})
+                                +categorisItem({text: 'Строительство'})
+                                +categorisItem({text: 'Строительство'})
+                                +categorisItem({text: 'Строительство'})
+                                +categorisItem({text: 'Строительство'})
+                                +categorisItem({text: 'Образование'})
+                                +categorisItem({text: 'Образование'})
+                                +categorisItem({text: 'Образование'})
+                                +categorisItem({text: 'Образование'})
+                    .categories-section__bot
+                        .categories-section__service-length Более 9 млн. услуг
+                        a.categories-section__toggle-link.active
+                            span.active-menu Скрыть категории
+                            span.no_active-menu Показать категории
+                            +setSvg({name: 'arrow-up'})
+            .popular-section
+                .popular-section__inner
+                    h2.popular-section__title
+                    .popular-section__content
+                        .services-cart__list-wrapper
+                            ul.services-cart__list
+                                +servicesCart({icon: '0.jpg', title: 'Репетитор по Английскому языку', name: 'Маргаритта Асланян', old: '12 лет', incReviews: 'Положительных отзывов: <a class="text-600 services-cart__item-subLink color-active" >12</a>', decReviews: 'Отрицательных отзывов:  <a class="services-cart__item-subLink text-600 color-red"> 10</a>', way: 'Находится: <a class="text-600 services-cart__item-subLink">12км от вас</a>'})
+                                +servicesCart({icon: '0.jpg', title: 'Репетитор по Английскому языку', name: 'Маргаритта Асланян', old: '12 лет', incReviews: 'Положительных отзывов: <a class="text-600 services-cart__item-subLink color-active" >12</a>', decReviews: 'Отрицательных отзывов:  <a class="services-cart__item-subLink text-600 color-red"> 10</a>', way: 'Находится: <a class="text-600 services-cart__item-subLink">12км от вас</a>'})
+                                +servicesCart({icon: '0.jpg', title: 'Репетитор по Английскому языку', name: 'Маргаритта Асланян', old: '12 лет', incReviews: 'Положительных отзывов: <a class="text-600 services-cart__item-subLink color-active" >12</a>', decReviews: 'Отрицательных отзывов:  <a class="services-cart__item-subLink text-600 color-red"> 10</a>', way: 'Находится: <a class="text-600 services-cart__item-subLink">12км от вас</a>'})
+                                +servicesCart({icon: '0.jpg', title: 'Репетитор по Английскому языку', name: 'Маргаритта Асланян', old: '12 лет', incReviews: 'Положительных отзывов: <a class="text-600 services-cart__item-subLink color-active" >12</a>', decReviews: 'Отрицательных отзывов:  <a class="services-cart__item-subLink text-600 color-red"> 10</a>', way: 'Находится: <a class="text-600 services-cart__item-subLink">12км от вас</a>'})
+                                +servicesCart({icon: '0.jpg', title: 'Репетитор по Английскому языку', name: 'Маргаритта Асланян', old: '12 лет', incReviews: 'Положительных отзывов: <a class="text-600 services-cart__item-subLink color-active" >12</a>', decReviews: 'Отрицательных отзывов:  <a class="services-cart__item-subLink text-600 color-red"> 10</a>', way: 'Находится: <a class="text-600 services-cart__item-subLink">12км от вас</a>'})
+                                +servicesCart({icon: '0.jpg', title: 'Репетитор по Английскому языку', name: 'Маргаритта Асланян', old: '12 лет', incReviews: 'Положительных отзывов: <a class="text-600 services-cart__item-subLink color-active" >12</a>', decReviews: 'Отрицательных отзывов:  <a class="services-cart__item-subLink text-600 color-red"> 10</a>', way: 'Находится: <a class="text-600 services-cart__item-subLink">12км от вас</a>'})
+                                +servicesCart({icon: '0.jpg', title: 'Репетитор по Английскому языку', name: 'Маргаритта Асланян', old: '12 лет', incReviews: 'Положительных отзывов: <a class="text-600 services-cart__item-subLink color-active" >12</a>', decReviews: 'Отрицательных отзывов:  <a class="services-cart__item-subLink text-600 color-red"> 10</a>', way: 'Находится: <a class="text-600 services-cart__item-subLink">12км от вас</a>'})
+                                +servicesCart({icon: '0.jpg', title: 'Репетитор по Английскому языку', name: 'Маргаритта Асланян', old: '12 лет', incReviews: 'Положительных отзывов: <a class="text-600 services-cart__item-subLink color-active" >12</a>', decReviews: 'Отрицательных отзывов:  <a class="services-cart__item-subLink text-600 color-red"> 10</a>', way: 'Находится: <a class="text-600 services-cart__item-subLink">12км от вас</a>'})
+                                +servicesCart({icon: '0.jpg', title: 'Репетитор по Английскому языку', name: 'Маргаритта Асланян', old: '12 лет', incReviews: 'Положительных отзывов: <a class="text-600 services-cart__item-subLink color-active" >12</a>', decReviews: 'Отрицательных отзывов:  <a class="services-cart__item-subLink text-600 color-red"> 10</a>', way: 'Находится: <a class="text-600 services-cart__item-subLink">12км от вас</a>'})
+                                +servicesCart({icon: '0.jpg', title: 'Репетитор по Английскому языку', name: 'Маргаритта Асланян', old: '12 лет', incReviews: 'Положительных отзывов: <a class="text-600 services-cart__item-subLink color-active" >12</a>', decReviews: 'Отрицательных отзывов:  <a class="services-cart__item-subLink text-600 color-red"> 10</a>', way: 'Находится: <a class="text-600 services-cart__item-subLink">12км от вас</a>'})
+                                +servicesCart({icon: '0.jpg', title: 'Репетитор по Английскому языку', name: 'Маргаритта Асланян', old: '12 лет', incReviews: 'Положительных отзывов: <a class="text-600 services-cart__item-subLink color-active" >12</a>', decReviews: 'Отрицательных отзывов:  <a class="services-cart__item-subLink text-600 color-red"> 10</a>', way: 'Находится: <a class="text-600 services-cart__item-subLink">12км от вас</a>'})
+                                +servicesCart({icon: '0.jpg', title: 'Репетитор по Английскому языку', name: 'Маргаритта Асланян', old: '12 лет', incReviews: 'Положительных отзывов: <a class="text-600 services-cart__item-subLink color-active" >12</a>', decReviews: 'Отрицательных отзывов:  <a class="services-cart__item-subLink text-600 color-red"> 10</a>', way: 'Находится: <a class="text-600 services-cart__item-subLink">12км от вас</a>'})
+                                +servicesCart({icon: '0.jpg', title: 'Репетитор по Английскому языку', name: 'Маргаритта Асланян', old: '12 лет', incReviews: 'Положительных отзывов: <a class="text-600 services-cart__item-subLink color-active" >12</a>', decReviews: 'Отрицательных отзывов:  <a class="services-cart__item-subLink text-600 color-red"> 10</a>', way: 'Находится: <a class="text-600 services-cart__item-subLink">12км от вас</a>'})
+                                +servicesCart({icon: '0.jpg', title: 'Репетитор по Английскому языку', name: 'Маргаритта Асланян', old: '12 лет', incReviews: 'Положительных отзывов: <a class="text-600 services-cart__item-subLink color-active" >12</a>', decReviews: 'Отрицательных отзывов:  <a class="services-cart__item-subLink text-600 color-red"> 10</a>', way: 'Находится: <a class="text-600 services-cart__item-subLink">12км от вас</a>'})
+                                +servicesCart({icon: '0.jpg', title: 'Репетитор по Английскому языку', name: 'Маргаритта Асланян', old: '12 лет', incReviews: 'Положительных отзывов: <a class="text-600 services-cart__item-subLink color-active" >12</a>', decReviews: 'Отрицательных отзывов:  <a class="services-cart__item-subLink text-600 color-red"> 10</a>', way: 'Находится: <a class="text-600 services-cart__item-subLink">12км от вас</a>'})
+                                +servicesCart({icon: '0.jpg', title: 'Репетитор по Английскому языку', name: 'Маргаритта Асланян', old: '12 лет', incReviews: 'Положительных отзывов: <a class="text-600 services-cart__item-subLink color-active" >12</a>', decReviews: 'Отрицательных отзывов:  <a class="services-cart__item-subLink text-600 color-red"> 10</a>', way: 'Находится: <a class="text-600 services-cart__item-subLink">12км от вас</a>'})
+
+mixin servicesCart(object)
+    .services-cart__item-wrapper
+        .services-cart__item
+            .services-cart__item-icon
+                img.icon(src='images/content/services-section/' + object.icon)
+            .services-cart__item-data
+                .services-cart__item-title !{object.title}
+                .services-cart__item-row
+                    span.services-cart__item-name !{object.name}
+                    span.services-cart__item-old !{object.old}
+                .services-cart__item-row
+                    .services-cart__item-incReviews !{object.incReviews}
+                .services-cart__item-row
+                    .services-cart__item-decReviews !{object.decReviews}
+                .services-cart__item-row
+                    .services-cart__item-way !{object.way}
+                .services-cart__item-links
+                    a.services-cart__item-about
+                        span Перейти на страницу
+                        +setSvg({name: 'arrow-left'})
+                    .services-cart__item-more
+                        span Читать описание
+                        +setSvg({name: 'arrow-up'})
+                .services-cart__item-description
+                    p Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. Lorem Ipsum используют потому, что тот обеспечивает более или
+                    p менее стандартное заполнение шаблона, а также реальное распределение букв и пробелов в абзацах, которое не получается при простой дубликации
+mixin categorisItem(object)
+    li.categories-list__item
+        a.categories-list__link !{object.text}
+
+
+

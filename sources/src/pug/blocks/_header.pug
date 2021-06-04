@@ -1,0 +1,24 @@
+header.header
+	.container
+		.header__inner
+			//logo
+			a(href="index.html").logo
+				.logo__abr
+					span.color--active N.N.
+					span.color--black S
+				.logo__subtext
+					span.logo__subtext-top No Name Service
+					span.logo__subtext-bot Просто и быстро
+			//search
+			.header__search
+				.search
+					form.search
+						input(type='text' placeholder='Поиск по услугам' name='header-search').search__input-text
+						input(type='submit' value='Найти услугу').search__input-submit.btn.btn-default
+			//lk
+			.header__lk
+				.lk
+					.login
+						a.login__link Вход регистрация
+					.serviceAdd
+						a.serviceAdd__btn.btn.btn-default Добавить услугу
